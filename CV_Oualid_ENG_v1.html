@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV de Oualid OUAZZANI CHAHDI">
+    <title>CV de Oualid</title>
+</head>
+
+
+
+<style>
+    body {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 7px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.sidebar {
+  width: 28%;
+  padding: 8px;
+  background-color: #f0f0f0;
+  border-radius: 8px 0 0 8px;
+}
+
+.sidebar img {
+  max-width: 60%;
+  border-radius: 10%;
+
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sidebar div{
+  margin-bottom: 10px;
+}
+
+.personal-info{
+  background-color: #d9edf7;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.personal-info img {
+  max-width: 10%;
+  margin: 5px;
+  border-radius: 10%;
+}
+
+.languages {
+  background-color: #f5f7d9;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.interests{
+  background-color: #d9f7e4;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.expertise {
+  background-color: #f7ebd9;
+  padding: 10px;
+  border-radius: 8px;
+}
+    /* Chips (étiquettes de compétences) */
+.chips { display: flex; flex-wrap: wrap; gap: 3px; }
+    .chip {
+  display: inline-block;
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 20px;
+  margin-right: 4px;
+  font-size: 12px;
+
+    }
+.main-content {
+  width: 70%;
+  padding: 20px;
+}
+
+header h1.animated,
+section h2.animated {
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+}
+
+header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.subtitle {
+  color: #777;
+  margin-top: 5px;
+}
+
+.contact-info h2,
+.education h2,
+.skills h2,
+.experience h2,
+.stage h2 {
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  padding-left: 5%;
+  margin: 35px 0 10px;
+  text-align: left;
+  font-size: 22px;
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+
+.year {
+  font-weight: bold;
+  color: #777;
+  font-size: 17px;
+}
+
+.info {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.skills ul li {
+  display: inline-block;
+  background-color: #f4f4f4;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+  font-size: 14px;
+  
+}
+
+.education ul li {
+  position: relative;
+}
+
+.education ul li::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.experience ul li {
+  position: relative;
+}
+
+.experience ul li::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.stage ul li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.stage ul li::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .sidebar,
+  .main-content {
+      width: 100%;
+      border-radius: 0;
+  }
+}
+
+.personal-info p{
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+
+
+
+.sidebar h2 {
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+.main-content h3 {
+
+  background-color: #cfcdcd98;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="icons/IMAGE.png" alt="Personal photo">
+            </div>
+            <div class="personal-info">
+                <h2>Personal Information</h2>
+                <p><img src="icons/la-personne.png" alt="Name Icon"> OUAZZANI CHAHDI Oualid</p>
+                <p><img src="icons/calendrier.png" alt="Birth Date Icon"> 04/10/2005</p>
+                <p><img src="icons/endroit.png" alt="Address Icon"> 62300, Lens, France</p>
+                <p><img src="icons/email.png" alt="Email Icon"> <span style="font-size: 12px;">ouazzanichahdioualid@gmail.com</span></p>
+                <p><img src="icons/linkedin.png" alt="LinkedIn Icon"> <span style="font-size: 12px;">linkedin.com/in/oualid-ouazzani-chahdi</span></p>
+                <p><img src="icons/telephone-intelligent.png" alt="Phone Icon"> +33 7 63 78 06 39 </p>
+                <p><img src="icons/permis.png" alt="Driving License Icon" style ="max-width: 12%;"> Driving License B</p>
+            </div>
+
+            <div class="expertise">
+                <h2>Technical Expertise</h2>
+                <ul>
+                    <li><strong>Programming Languages</strong>
+                        <div class="chips">
+                            <span class="chip">Java</span>
+                            <span class="chip">C</span>
+                            <span class="chip">HTML / CSS</span>
+                            <span class="chip">PHP</span>
+                            <span class="chip">JavaScript</span>
+                            <span class="chip">Python</span>
+                            <span class="chip">C#</span>
+                            <span class="chip">SQL</span>
+                        </div>
+                    </li>
+                    <li><strong>Frameworks & Web Tools</strong>
+                        <div class="chips">
+                            <span class="chip">Symfony</span>
+                            <span class="chip">Laravel</span>
+                            <span class="chip">React</span>
+                            <span class="chip">Bootstrap</span>
+                        </div>
+                    </li>
+                    <li><strong>Databases</strong>
+                        <div class="chips">
+                            <span class="chip">PostgreSQL</span>
+                            <span class="chip">MySQL</span>
+                            <span class="chip">MongoDB</span>
+                            <span class="chip">Doctrine ORM</span>
+                        </div>
+                    </li>
+                    <li><strong>Tools & Environments</strong>
+                        <div class="chips">
+                            <span class="chip">Git / GitLab / GitHub</span>
+                            <span class="chip">VS Code</span>
+                            <span class="chip">IntelliJ IDEA</span>
+                            <span class="chip">Trello</span>
+                        </div>
+                    </li>
+                    <li><strong>Methodologies</strong>
+                        <div class="chips">
+                            <span class="chip">Agile</span>
+                            <span class="chip">Scrum</span>
+                            <span class="chip">Analysis & Testing</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="languages">
+                <h2>Languages</h2>
+                <ul>
+                    <li>French: Bilingual</li>
+                    <li>English: Advanced (C1)</li>
+                    <li>Spanish: Basic (A1)</li>
+                    <li>Japanese: Basic (A1)</li>
+                    <li>Arabic: Native language</li>
+                </ul>
+            </div>
+
+            <div class="interests">
+                <h2>Interests</h2>
+                <ul>
+                    <li>Travel and exploration, Video games, Music.</li>
+                    <li>Sports activities: Basketball, Football, Volleyball, Taekwondo.</li>
+                    <li>Working on IT and software projects.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <h1 style="text-align: center;">OUAZZANI CHAHDI Oualid</h1>
+                <p class="subtitle" style="text-align: center;">Future computer engineer, passionate about web and software development.</p>
+                <h3>Seeking a 17 weeks technical internship starting from April 2026</h3>
+            </header>
+
+            <div class="education">
+                <h2>Education</h2>
+                <ul>
+                    <li><span class="year">[Present]: First year of the engineering cycle.</span> <br>
+                        <span class="info">Engineering degree in Computer and Industrial Engineering. <br>
+                        Institute of Computer and Industrial Engineering (<B>IG2I</B>) – <B>Centrale Lille</B>, Lens, France.</span>
+                    </li>
+                    <li><span class="year">[2023] - [2025]: Integrated preparatory cycle.</span> <br>
+                        <span class="info">Institute of Computer and Industrial Engineering (<B>IG2I</B>) – <B>Centrale Lille</B>, Lens.</span>
+                    </li>
+                    <li><span class="year">[2022] - [2023]: Final year of high school – “Mathematical Sciences B”.</span> <br>
+                        <span class="info">Lycée ABDELLAH CHAFCHAWNI, Témara, Morocco. <br> Graduated with <strong>Honors</strong>.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="stage">
+                <h2>Internships</h2>
+                <ul>
+                    <li><span class="year">May - August 2025: Web Application Development – DSIN - Centrale Lille</span><br>
+                        <span class="info">
+                            12-week technical internship at IG2I engineering school. <b>Symfony 6 / PostgreSQL project</b> to design a complete platform for managing student internships. <br>
+                            <b>- Designed the relational schema and Doctrine entities</b>.<br>
+                            <b>- Developed a multi-step form</b> with complex business logic.<br>
+                            <b>- Created an administration interface</b> and a responsive web platform for internship management.
+                        </span>
+                    </li>
+                    <li><span class="year">July - August 2024: Stock management and optimization – SUEZ</span> <br> 
+                        <span class="info">6-week industrial internship in a mechanical workshop focused on <b>Industrial Maintenance</b>.<br>
+                        <b>- Reorganized and digitized inventory</b> to optimize spare parts management.<br>
+                        <b>- Improved logistic processes</b>, reducing search time for parts and increasing workshop efficiency.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="experience">
+                <h2>Projects</h2>
+                <ul>
+                    <li><span class="year">[2024] - [2025]: IT Project</span> <br>
+                        <span class="info">Concept: Development of a website for a real client.<br>
+                        Role: Responsible for <b>planning management</b>, team meetings, and <b>Back-End & Database</b> development.</span></li>
+                    <li><span class="year">[2024] - [2025]: Industrial Project</span> <br>
+                        <span class="info">Project name: Sam, the firefighting truck.<br>
+                        Role: Responsible for identifying <b>mechanical and electrical requirements and risks</b>.</span></li>
+                    <li><span class="year">[2023] - [2024]: Game Engine Challenge</span> <br>
+                        <span class="info">Role: Team leader, responsible for task distribution, organization, and strategy.<br>
+                        Concept: Development of the game "<b>AVALAM</b>".</span></li>
+                </ul>
+            </div>
+
+            <div class="skills">
+                <h2>Soft Skills</h2>
+                <ul>
+                    <li>Full-Stack Developer</li>
+                    <li>Web application design and development</li>
+                    <li>Database management</li>
+                    <li>Industrial computing</li>
+                    <li>Problem-solving and analytical thinking</li>
+                    <li>Project management</li>
+                    <li>Teamwork and communication</li>
+                    <li>Adaptability and quick learning</li>
+                    <li>Rigor, curiosity, analytical mindset, and teamwork.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume of Oualid OUAZZANI CHAHDI">
+    <title>Oualid Resume</title>
+</head>
+
+
+<style>
+    body {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 7px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.sidebar {
+  width: 28%;
+  padding: 8px;
+  background-color: #f0f0f0;
+  border-radius: 8px 0 0 8px;
+}
+
+.sidebar img {
+  max-width: 65%;
+  border-radius: 10%;
+
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sidebar div{
+  margin-bottom: 20px;
+}
+
+.personal-info{
+  background-color: #d9edf7;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.personal-info img {
+  max-width: 10%;
+  margin: 5px;
+  border-radius: 10%;
+}
+
+.languages {
+  background-color: #f5f7d9;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.interests{
+  background-color: #d9f7e4;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.expertise {
+  background-color: #f7ebd9;
+  padding: 10px;
+  border-radius: 8px;
+}
+    /* Chips (skill tags) */
+.chips { display: flex; flex-wrap: wrap; gap: 3px; }
+    .chip {
+  display: inline-block;
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 20px;
+  margin-right: 4px;
+  font-size: 12px;
+
+    }
+.main-content {
+  width: 70%;
+  padding: 20px;
+  font-size: 18px;
+}
+
+header h1.animated,
+section h2.animated {
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+}
+
+header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.subtitle {
+  color: #777;
+  margin-top: 5px;
+}
+
+.contact-info h2,
+.education h2,
+.skills h2,
+.experience h2,
+.stage h2 {
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  padding-left: 5%;
+  margin: 35px 0 10px;
+  text-align: left;
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+
+.year {
+  font-weight: bold;
+  color: #777;
+  font-size: 16px;
+}
+
+.info {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.skills ul li {
+  display: inline-block;
+  background-color: #f4f4f4;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+  font-size: 14px;
+  
+}
+
+.education ul li {
+  position: relative;
+}
+
+.education ul li::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.experience ul li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.experience ul li::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.stage ul li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.stage ul li::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .sidebar,
+  .main-content {
+      width: 100%;
+      border-radius: 0;
+  }
+}
+
+.personal-info p{
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+
+
+
+.sidebar h2 {
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+.main-content h4 {
+
+  background-color: #cfcdcd98;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+
+
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="icons/IMAGE.png" alt="Personal photo">
+            </div>
+            <div class="personal-info">
+                <h2>Personal Information</h2>
+                <p><img src="icons/la-personne.png" alt="Name icon"> OUAZZANI CHAHDI Oualid</p>
+                <p><img src="icons/calendrier.png" alt="Birth date icon"> 04/10/2005</p>
+                <p><img src="icons/endroit.png" alt="Address icon"> 62300, Lens</p>
+                <p><img src="icons/email.png" alt="Email icon"> <a href="mailto:oualid.ouazzani@ig2i.centralellille.fr" style="text-decoration: none; color: inherit;">oualid.ouazzani@ig2i.centralellille.fr</a></p>
+                <p><img src="icons/linkedin.png" alt="LinkedIn icon"> <a href="https://linkedin.com/in/oualid-ouazzani-chahdi" style="text-decoration: none; color: inherit;">LinkedIn: oualid-ouazzani-chahdi</a></p>
+                <p><img src="icons/telephone-intelligent.png" alt="Phone icon"> +33 7 63 78 06 39 </p>
+                <p><img src="icons/permis.png" alt="Driving license icon" style ="max-width: 12%;"> Driving License (B)</p>
+            </div>
+              <div class="expertise">
+                <h2>Technical Expertise</h2>
+                <ul>
+                <li><strong>Coding Languages</strong>
+                    <div class="chips">
+                        <span class="chip">Java</span>
+                        <span class="chip">C</span>
+                        <span class="chip">HTML / CSS</span>
+                        <span class="chip">PHP</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">Python</span>
+                        <span class="chip">C++</span>
+                        <span class="chip">SQL</span>
+                    </div>
+                </li>
+                <li><strong>Frameworks &amp; web tools</strong>
+                    <div class="chips">
+                        <span class="chip">Symfony</span>
+                        <span class="chip">Laravel</span>
+                        <span class="chip">Bootstrap</span>
+                    </div>
+                </li>
+                <li><strong>Databases</strong>
+                    <div class="chips">
+                        <span class="chip">PostgreSQL</span>
+                        <span class="chip">MySQL</span>
+                        <span class="chip">MariaDB</span>
+                        <span class="chip">Doctrine ORM</span>
+                    </div>
+                </li>    
+                <li><strong>Network architecture (Cisco)</strong>
+                    <div class="chips">
+                        <span class="chip">OSI model</span>
+                        <span class="chip">TCP/IP</span>
+                        <span class="chip">Routing &amp; switching</span>
+                        <span class="chip">Network security</span>
+                        <span class="chip">Network administration</span>
+                        <span class="chip">SSH / Telnet / TFTP connections</span>
+                    </div>
+                </li>
+
+
+                <li><strong>Tools &amp; environments</strong>
+                    <div class="chips">
+                        <span class="chip">Git / GitLab / GitHub</span>
+                        <span class="chip">VS Code</span>
+                        <span class="chip">IntelliJ IDEA</span>
+                        <span class="chip">IntelliJ DataGrip</span>
+                        <span class="chip">Trello</span>
+                    </div>
+                </li>
+                <li><strong>Methods</strong>
+                    <div class="chips">
+                        <span class="chip">Agile</span>
+                        <span class="chip">Kanban</span>
+                        <span class="chip">Scrum</span>
+                        <span class="chip">Analysis &amp; testing</span>
+                    </div>
+
+                </li>
+            </ul>
+                </div>
+                <div class="languages">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>French: Bilingual</li>
+                        <li>English: Advanced (C1)</li>
+                        <li>Spanish: Basic (A1)</li>
+                        <li>Arabic: Native</li>
+                    </ul>
+                </div>
+                <div class="interests">
+                    <h2>Interests</h2>
+                    <ul>
+                        <li>Travel and getaways: discovering beautiful natural views.</li>
+                        <li>Sports: <br>- Club volleyball for 3 years, <br> - Club basketball for 4 years, <br> - Club taekwondo for 10 years</li>
+                        <li>Technology and innovation: passionate about new technologies and advances in computing.</li>
+                    </ul>
+                </div>
+
+        </div>
+        <div class="main-content">
+            <header>
+                <h1 style="text-align: center;">OUAZZANI CHAHDI Oualid</h1>
+                <p class="subtitle" style="text-align: center;"> Future computer engineering student, motivated by web and software development.</p>
+                <h4><B>Seeking a work-study position in software development</B> <br> for the 2026-2027 academic year</h4>
+            </header>
+            <div class="education">
+                <h2>Education and Training</h2>
+                <ul>
+                    <li><span class="year">[Present]: First year in engineering program.</span> <br> <span class="info">Engineering degree in computer and industrial engineering. <br> <B>I</B>nstitute of <B>C</B>omputer and <B>I</B>ndustrial <B>E</B>ngineering - <B>Centrale Lille</B>, Lens.</span></li>
+                    <li><span class="year">[2023] - [2025]: Integrated preparatory cycle.</span> <br>  <B>I</B>nstitute of <B>C</B>omputer and <B>I</B>ndustrial <B>E</B>ngineering - <B>Centrale Lille</B>, Lens.</span></li>
+                    <li><span class="year">[2022] - [2023]: Final year of the Baccalaureate - "Mathematics Sciences B" track.</span> <br> <span class="info">ABDELLAH CHAFCHAWNI High School, Temara, Morocco <br> Honors: <strong>Very Good</strong>.</span></li>
+                </ul>
+            </div>
+
+            <div class="stage">
+                <h2>Internships</h2>
+                <ul>
+                    <li><span class="year">May - August 2025: DSIN Centrale Lille - Web application development</span><br>
+                        <span class="info">
+                            12-week technical internship within Centrale Lille IT services, <b>Symfony 6 / PostgreSQL project</b> to design a full platform for student internship management. <br>
+                            <b>- Designed the relational schema and Doctrine entities</b>.<br>
+                            <b>- Built a multi-step form</b> with complex business logic.<br>
+                            <b>- Created an admin interface</b> and internship browsing via a responsive web UI.
+                        </span>
+                    </li>
+                    <li><span class="year">July - August 2024: SUEZ - Inventory management and optimization</span> <br> 
+                      <span class="info"> 6-week worker internship in a mechanical workshop focused on <B>industrial maintenance</B>. 
+                        <br> <B>- Reorganized and digitized the workshop inventory</B> to optimize parts management. 
+                        <br> <B>- Optimized logistics processes</B>, reducing parts search time and improving workshop efficiency. 
+                      </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="experience">
+                <h2>Projects</h2>
+                <ul>
+
+                    <li>
+                        <span class="year">[January 2026] - [February 2026]: Client/Server Middleware Project</span><br>
+                        <span class="info">
+                          Academic project in <b>systems and network programming in C</b>: designed a client/server middleware based on TCP/IP sockets (INET).<br>
+                          <b>- Built a network library</b> to abstract communications.<br>
+                          <b>- Implemented a multi-client server</b> with simultaneous connection handling.
+                        </span>
+                    </li>
+
+
+                    <li>
+                        <span class="year">[September 2024] - [January 2025]: OOP Project - Vehicle management application</span><br>
+                        <span class="info">
+                          Academic project in <b>object-oriented programming in Java</b>: designed a vehicle management app (customers, vehicles, services).<br>
+                          <b>- UML modeling</b> and MVC architecture structuring.<br>
+                          <b>- Built a graphical interface</b> with Java Swing.<br>
+                          <b>- Implemented data persistence</b> with JPA / Hibernate.
+                        </span>
+                    </li>
+
+
+                    <li>
+                        <span class="year">[September 2024] - [April 2025]: Software project - Web development (real client)</span><br>
+                        <span class="info">
+                          Academic <b>web development project for a real client</b> to build a functional site matching a requirements document.<br>
+                          <b>- Responsible for schedule management</b> and organizing project meetings.<br>
+                          <b>- Developed back-end features</b> and managed the database.
+                        </span>
+                    </li>
+                    <li>
+                        <span class="year">[February 2023] - [June 2024]: Game engine challenge - AVALAM</span><br>
+                        <span class="info">
+                          Academic <b>game development project</b> focused on designing an engine and a strategy game.<br>
+                          <b>- Team lead role</b>: organized work, assigned tasks, and defined strategies.<br>
+                          <b>- Built the</b> <b>AVALAM</b> <b>game</b> and coordinated the team technically.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skills">
+              <h2>Transferable Skills</h2>
+              
+              <h3 style="color: #555; margin-top: 10px; margin-bottom: 5px;">Hard Skills</h3>
+              <ul>
+                <li>Full-stack developer</li>     
+                <li>Object-oriented programming</li>                 
+                <li>Web application design and development</li>  
+                <li>Database management</li>  
+                <li>Network architecture and administration (Cisco)</li>              
+                <li>Industrial computing</li>              
+                <li>Problem analysis and solving</li>
+                <li>Proficiency with development and project management tools</li>
+              </ul>
+              
+              <h3 style="color: #555; margin-top: 10px; margin-bottom: 5px;">Soft Skills</h3>
+              <ul>
+                <li>Project management</li>
+                <li>Leadership and team organization</li>
+                <li>Teamwork and communication</li>
+                <li>Autonomy and initiative</li>
+                <li>Adaptability and fast learning</li>
+                <li>Rigor, curiosity, analytical mindset</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
